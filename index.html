@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    		<script src="js/phaser.min.js"></script>
+				<script src="js/game.js"></script>
+				<script src="js/start.js"></script>
+				<script src="js/menu.js"></script>
+
+    		<style>
+    			body{margin:0}
+    		</style>
+				<script>
+								var game = new Phaser.Game(1200, 800, Phaser.AUTO, "game");
+								var cursor;
+								var bullet;
+								var bullets;
+								var bulletTime = 0;
+								var shootButton;
+								var ufo;
+								var para;
+								var lightningship;
+								var chose;
+								var enemies;
+								var e;
+								var time_traveled = 3000;
+								var enemyBullets;
+								var firingTimer = 0;
+								var livingEnemies = [];
+								var asteroid;
+								var asteroidgroup;
+								var score;
+								var lives;
+								var shiplife = 3;
+								var exploding_ship;
+								var score_text;
+								var background;
+								var restartB;
+								var flag = true;
+								var flag_text;
+								var sound_text;
+								var music;
+
+								var style =  { font: "42px Audiowide", fill: "#ff0044", align: "center" };
+								game.state.add("Start", Start);
+								game.state.add("Menu", Menu);
+								game.state.add("Game", Game);
+								game.state.start("Start");
+
+				</script>
+				</head>
+				  <body>
+
+    </body>
+</html>
